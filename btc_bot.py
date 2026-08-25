@@ -263,12 +263,13 @@ def main():
         last_close = float(post_range_candles['Close'].iloc[-1])
         log(f"Último precio de cierre: ${last_close:.2f}")
 
-        # Buscar señales de ruptura
+        # Buscar señales de ruptura (Alpaca Crypto es solo para posiciones largas / Long-Only)
         signal = None
         if last_close > range_high:
             signal = "Long"
         elif last_close < range_low:
-            signal = "Short"
+            log("Señal de ruptura bajista (Short) detectada, pero Alpaca no permite ventas en corto para criptomonedas. Señal ignorada.")
+            return
 
         if signal:
             log(f"¡Señal de ruptura {signal} detectada a las {post_range_candles.index[-1].time()}!")
