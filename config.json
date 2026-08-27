@@ -1,8 +1,8 @@
 {
   "r_factor": 2.5,
   "risk_per_trade_pct": 3.0,
-  "session_start_est": "03:00",
-  "session_range_end_est": "03:15",
-  "session_end_est": "10:00",
+  "session_start_est": "00:05",
+  "session_range_end_est": "00:20",
+  "session_end_est": "23:55",
   "active": true
 }
