@@ -1,8 +1,5 @@
 {
-  "r_factor": 2.5,
-  "risk_per_trade_pct": 3.0,
-  "session_start_est": "00:05",
-  "session_range_end_est": "00:20",
-  "session_end_est": "23:55",
+  "profit_target_pct": 3.0,
+  "risk_per_trade_pct": 2.0,
   "active": true
 }
